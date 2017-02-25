@@ -6,7 +6,12 @@ var lastname = "Susmitha";
 var person = {
 	firstname : "Naveen",
 	lastname : "Mannam",
-	age: 23
+	age: 23,
+	search: {
+		disp : function () {
+		console.log("Inside the search.");
+		}
+	}
 };
 
 Object.prototype.greet = function () {
@@ -20,7 +25,10 @@ Object.prototype.greets = function (firstname, lastname) {
 };
 
 
+
+
 person.greet();
 person.greets();
 greet();
 greets();
+person.search.greet();
