@@ -1,34 +1,27 @@
-// Global object prototype
-var firstname = "Minny";
-var lastname = "Susmitha";
+// Creating Prototypes for Objects
 
-
-var person = {
-	firstname : "Naveen",
-	lastname : "Mannam",
-	age: 23,
-	search: {
-		disp : function () {
-		console.log("Inside the search.");
-		}
-	}
+var myObj = function (name,age,city) {
+		
 };
 
-Object.prototype.greet = function () {
-	console.log("Hello, This is under global prototype.");
+myObj.prototype.name = "Name";
+myObj.prototype.age = 0;
+myObj.prototype.city = "City";
+myObj.prototype.display = function () {
+	console.log(this.name + " is " + this.age + " years old and " + "lives in " + this.city);	
 };
 
+var person1 = new myObj();
+person1.name = "Minny";
+person1.age = 23;
+person1.city = "Nellore";
+
+var person2 = new myObj();
+person2.name = "Naveen";
+person2.age = 33;
+person2.city = "Kavali";
+
+person1.display();
+person2.display();
 
 
-Object.prototype.greets = function (firstname, lastname) {
-	console.log("Hello, " + this.firstname + " " + this.lastname + " This is under global prototype.");
-};
-
-
-
-
-person.greet();
-person.greets();
-greet();
-greets();
-person.search.greet();
