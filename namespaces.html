@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/main.css" rel="stylesheet">
+        <script src="js/teama.js"></script>
+        <script src="js/teamb.js"></script>
     </head>
     <body>
         <div id="app">
@@ -17,7 +19,12 @@
             </div>
         </div>
 
-       
+        <script type="text/javascript">
+            var myidone = document.getElementById('one');
+            myidone.innerHTML = new myname.teama.customer('Naveen','Mannam').getFullName();
+            var myidtwo = document.getElementById('two');
+            myidtwo.innerHTML = new myname.teamb.customer('Naveen','Kumar','Mannam').getFullName();
+        </script>
         <script src="js/main.js"></script>
     </body>
 </html>
