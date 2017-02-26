@@ -1,27 +1,27 @@
-// Creating Prototypes for Objects
+// Object Literals 
 
-var myObj = function (name,age,city) {
-		
+var person = {
+	firstName: "Naveen",
+	lastName: "Mannam",
+	state: "Nellore"
 };
 
-myObj.prototype.name = "Name";
-myObj.prototype.age = 0;
-myObj.prototype.city = "City";
-myObj.prototype.display = function () {
-	console.log(this.name + " is " + this.age + " years old and " + "lives in " + this.city);	
+console.log(person.firstName);
+console.log(person.lastName);
+console.log(person.state);
+
+
+// Constructor Function Objects
+
+var persons = function (firstName,lastName,state) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.state = state;	
 };
 
-var person1 = new myObj();
-person1.name = "Minny";
-person1.age = 23;
-person1.city = "Nellore";
-
-var person2 = new myObj();
-person2.name = "Naveen";
-person2.age = 33;
-person2.city = "Kavali";
-
-person1.display();
-person2.display();
+var one = new persons("Minny","Mannam","Kavali")
 
 
+console.log(one.firstName);
+console.log(one.lastName);
+console.log(one.state);
