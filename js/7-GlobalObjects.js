@@ -4,12 +4,12 @@ var lastname = "Susmitha";
 
 
 var person = {
-	firstname : "Naveen",
-	lastname : "Mannam",
+	firstname: "Naveen",
+	lastname: "Mannam",
 	age: 23,
 	search: {
-		disp : function () {
-		console.log("Inside the search.");
+		disp: function () {
+			console.log("Inside the search.");
 		}
 	}
 };
@@ -19,16 +19,20 @@ Object.prototype.greet = function () {
 };
 
 
-
-Object.prototype.greets = function (firstname, lastname) {
+Object.prototype.greetsVoid = function () {
 	console.log("Hello, " + this.firstname + " " + this.lastname + " This is under global prototype.");
+};
+
+Object.prototype.greetsReturn = function () {
+	console.log("Hello, " + firstname + " " + lastname + " This is under global prototype.");
 };
 
 
 
-
 person.greet();
-person.greets();
+person.greetsVoid();
+person.greetsReturn("Rohi", "Suhas");
 greet();
-greets();
+greetsVoid();
+greetsReturn();
 person.search.greet();

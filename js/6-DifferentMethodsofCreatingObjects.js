@@ -5,7 +5,8 @@
 3 - Prototype Pattern
 4 - Dynamic Prototype Pattern
 
-As javascript has no concept called as classes, we will create an object first and then will use that one to create a new objects from it.
+As javascript has no concept called as classes, we will create an object first and then will use that one to create a new objects
+from it.
 
 */
 
@@ -101,7 +102,7 @@ var dynamicProto = function (firstName,lastName,age) {
 	this.firstName = firstName;
 	this.lastName = lastName;
 	this.age = age;
-	// Check if a function names displayDetails exits or not and if its not present , the function will be created under 
+	// Check if a function names display Details exits or not and if its not present , the function will be created under 
 	// dynamicProto as a prototype function.
 	if (typeof this.displayDetails !== 'function'){
 		dynamicProto.prototype.displayDetails = function () {

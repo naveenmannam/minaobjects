@@ -10,6 +10,6 @@ var person2 = {
 	age: 24
 };
 
-// Willl return false as they are not equal.
+// Will return false as they are not equal.
 
 console.log(person1 == person2);
