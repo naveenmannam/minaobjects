@@ -1,3 +1,5 @@
-var myvalue = prompt("Enter your details.");
+// var myvalue = prompt("Enter your details.");
 
-alert("Your value is " + myvalue);
+// console.log("Your value is " + myvalue);
+
+console.log("Main.js has been linked.")
