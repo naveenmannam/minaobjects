@@ -1,2 +1,3 @@
-# minaobjects
-Basic JavaScript Objects
+# Javascript Objects
+
+## Different ways of creating Javascript Objects
