@@ -1,13 +1,13 @@
 // Javascript Objects work as reference Types and they are not equal
 
 var person1 = {
-	name: "Naveen",
-	age: 24
+  name: "Naveen",
+  age: 24
 };
 
 var person2 = {
-	name: "Naveen",
-	age: 24
+  name: "Naveen",
+  age: 24
 };
 
 // Will return false as they are not equal.
